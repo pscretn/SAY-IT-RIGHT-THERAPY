@@ -2,8 +2,11 @@ import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
 GPIO.setwarnings(False)
 reader = SimpleMFRC522()
+import drivers
 from word_pron_rfid import wordpronouncing
 from word_pron_random import wordpronoun
+display = drivers.Lcd()
+display.lcd_backlight(0)
 while True :
         try:
                 val = reader.read()
