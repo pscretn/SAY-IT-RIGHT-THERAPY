@@ -103,7 +103,7 @@ def wordpronoun():
             wiringpi.digitalWrite(green,1)
             SpeakText("you said the word correctly")
             #display.lcd_clear()
-            
+            wiringpi.digitalWrite(green,0)
             break
         else:
             if wordspoken in pr.rhymes(word):
@@ -112,6 +112,7 @@ def wordpronoun():
                 #lcdprint(display,"you are closer to the word , you have "+str(val)+" chances left",1)
                 SpeakText("you are closer to the word , you have "+str(val)+" chances left")
                 #display.lcd_clear()
+                wiringpi.digitalWrite(blue,0)
             else:
                 wiringpi.digitalWrite(red,1)
                 #print("you said the wrong word , you have "+str(val)+" chances left")
@@ -119,9 +120,6 @@ def wordpronoun():
                 #lcdprint(display,"you said the wrong word , you have "+str(val)+" chances left",1)
                 SpeakText("you said the wrong word , you have "+str(val)+" chances left")
                 #display.lcd_clear()
-
-        val-=1
-        wiringpi.digitalWrite(red,0)
-        wiringpi.digitalWrite(green,0)
-        wiringpi.digitalWrite(blue,0)
+                wiringpi.digitalWrite(red,0)
+        val-=1    
     wiringpi.digitalWrite(l1,0)
