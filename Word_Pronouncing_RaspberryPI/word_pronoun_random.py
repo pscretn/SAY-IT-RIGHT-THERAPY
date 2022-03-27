@@ -74,7 +74,7 @@ def lcdprint(display, text, num_line=1, num_cols=16):
             
 
         
-def wordpronouncing():
+def wordpronoun():
     wiringpi.digitalWrite(l1,1)
     word = random.choice(words)
     wordpro=""
