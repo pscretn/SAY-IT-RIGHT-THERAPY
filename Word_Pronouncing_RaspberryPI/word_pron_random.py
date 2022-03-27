@@ -25,8 +25,8 @@ wiringpi.digitalWrite(l1,0)
 record = sr.Recognizer()
 hint1 = "Can you repeat after me , the word"
 words = "orange","strawberry","apple","man","boy","girl","blue","red"
-startbeep =  AudioSegment.from_wav("sounds/startbeep.wav")
-stopbeep =  AudioSegment.from_wav("sounds/endbeep.wav")
+startbeep =  AudioSegment.from_wav("/home/pi/SAY-IT-RIGHT-THERAPY/Word_Pronouncing_RaspberryPI/sounds/startbeep.wav")
+stopbeep =  AudioSegment.from_wav("/home/pi/SAY-IT-RIGHT-THERAPY/Word_Pronouncing_RaspberryPI/sounds/endbeep.wav")
 display = drivers.Lcd()
 display.lcd_backlight(0)
 def  micinput():
