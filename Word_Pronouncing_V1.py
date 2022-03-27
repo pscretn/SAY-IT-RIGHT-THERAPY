@@ -8,8 +8,8 @@ from pydub.playback import play
 record = sr.Recognizer()
 hint1 = "Can you repeat after me , the word"
 words = "orange","strawberry","apple","man","boy","girl","woman","blue","red"
-startbeep =  AudioSegment.from_wav("sounds\startbeep.wav")
-stopbeep =  AudioSegment.from_wav("sounds\endbeep.wav")
+startbeep =  AudioSegment.from_wav("sounds/startbeep.wav")
+stopbeep =  AudioSegment.from_wav("sounds/endbeep.wav")
 def SpeakText(voice):
     engine = pyx.init('sapi5')
     voices = engine.getProperty('voices')
