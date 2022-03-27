@@ -4,6 +4,7 @@ import pronouncing as pr
 from pydub import AudioSegment
 from pydub.playback import play
 import drivers
+import random
 import wiringpi
 from time import sleep
 import RPi.GPIO as GPIO
@@ -73,9 +74,9 @@ def lcdprint(display, text, num_line=1, num_cols=16):
             
 
         
-def wordpronouncing(word):
+def wordpronoun():
     wiringpi.digitalWrite(l1,1)
-    #word = random.choice(words)
+    word = random.choice(words)
     wordpro=""
     for i in pr.phones_for_word(word)[0]:
         if(i.isalpha()):
@@ -102,7 +103,7 @@ def wordpronouncing(word):
             wiringpi.digitalWrite(green,1)
             SpeakText("you said the word correctly")
             #display.lcd_clear()
-            
+            wiringpi.digitalWrite(green,0)
             break
         else:
             if wordspoken in pr.rhymes(word):
@@ -111,6 +112,7 @@ def wordpronouncing(word):
                 #lcdprint(display,"you are closer to the word , you have "+str(val)+" chances left",1)
                 SpeakText("you are closer to the word , you have "+str(val)+" chances left")
                 #display.lcd_clear()
+                wiringpi.digitalWrite(blue,0)
             else:
                 wiringpi.digitalWrite(red,1)
                 #print("you said the wrong word , you have "+str(val)+" chances left")
@@ -118,9 +120,6 @@ def wordpronouncing(word):
                 #lcdprint(display,"you said the wrong word , you have "+str(val)+" chances left",1)
                 SpeakText("you said the wrong word , you have "+str(val)+" chances left")
                 #display.lcd_clear()
-
+                wiringpi.digitalWrite(red,0)
         val-=1
-        wiringpi.digitalWrite(red,0)
-        wiringpi.digitalWrite(green,0)
-        wiringpi.digitalWrite(blue,0)
     wiringpi.digitalWrite(l1,0)

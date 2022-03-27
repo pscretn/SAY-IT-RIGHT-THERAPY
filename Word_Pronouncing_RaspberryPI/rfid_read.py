@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
 GPIO.setwarnings(False)
 reader = SimpleMFRC522()
-from Word_Pronouncing_rfid import wordpronouncing
-from Word_Pronouncing_Random import wordpronouncing
+from word_pron_rfid import wordpronouncing
+from word_pron_random import wordpronoun
 while True :
         try:
                 val = reader.read()
@@ -24,7 +24,7 @@ while True :
                         wordpronouncing("black")
                 else:
                         print("Random")
-                        wordpronouncing()
+                        wordpronoun()
         except:
                 pass
 
