@@ -2,10 +2,75 @@ import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
 GPIO.setwarnings(False)
 reader = SimpleMFRC522()
+import wiringpi
+import time
 import drivers
 from word_pron_rfid import wordpronouncing
 from word_pron_random import wordpronoun
 from identify_color import whichcolor
+r=28
+g=27
+b=26
+wiringpi.wiringPiSetup()
+wiringpi.pinMode(r,1)
+wiringpi.pinMode(g,1)
+wiringpi.pinMode(b,1)
+#red
+wiringpi.digitalWrite(r,1)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+#green
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,1)
+wiringpi.digitalWrite(b,0)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+#blue
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,1)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+#yellow
+wiringpi.digitalWrite(r,1)
+wiringpi.digitalWrite(g,1)
+wiringpi.digitalWrite(b,0)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+#magenta
+wiringpi.digitalWrite(r,1)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,1)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+#cyan
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,1)
+wiringpi.digitalWrite(b,1)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
+#white
+wiringpi.digitalWrite(r,1)
+wiringpi.digitalWrite(g,1)
+wiringpi.digitalWrite(b,1)
+time.sleep(0.2)
+wiringpi.digitalWrite(r,0)
+wiringpi.digitalWrite(g,0)
+wiringpi.digitalWrite(b,0)
 display = drivers.Lcd()
 display.lcd_backlight(0)
 while True :
