@@ -5,6 +5,7 @@ reader = SimpleMFRC522()
 import drivers
 from word_pron_rfid import wordpronouncing
 from word_pron_random import wordpronoun
+from identify_color import whichcolor
 display = drivers.Lcd()
 display.lcd_backlight(0)
 while True :
@@ -23,8 +24,8 @@ while True :
                         print("yellow")
                         wordpronouncing("yellow")
                 elif val[0] == 925553136382:
-                        print("Black")
-                        wordpronouncing("black")
+                        print("Colors")
+                        whichcolor()
                 else:
                         print("Random")
                         wordpronoun()
