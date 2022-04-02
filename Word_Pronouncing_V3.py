@@ -10,8 +10,7 @@ words = "lion","girl","boy"
 
 
 def main():
-    #word = random.choice(words)
-    word = "boy"
+    word = random.choice(words)
     wordpro=""
     for i in pr.phones_for_word(word)[0]:
         if(i.isalpha()):
