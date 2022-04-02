@@ -61,5 +61,6 @@ def main():
                 print("you said the wrong word , you have "+str(val)+" chances left")
                 SpeakText("you said the wrong word , you have "+str(val)+" chances left")
         val-=1
+        
 if __name__ == '__main__':
     main()

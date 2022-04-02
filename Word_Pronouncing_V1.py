@@ -72,8 +72,6 @@ def checkword(text,word):
     else:
         pronoun(word)
 
-
-
 def  UserVoice(word):
     try:
         with sr.Microphone() as mic:
