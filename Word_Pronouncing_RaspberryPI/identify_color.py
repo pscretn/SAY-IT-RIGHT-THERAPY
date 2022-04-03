@@ -112,6 +112,7 @@ def nameofcolor(color):
         display.lcd_backlight(0)
     wiringpi.digitalWrite(red,0)
     wiringpi.digitalWrite(green,0)
+    wiringpi.digitalWrite(l1,0)
     
 def whichcolor():
     color = random.choice(colors)
