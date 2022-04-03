@@ -12,10 +12,10 @@ def  micinput():
         with sr.Microphone() as mic:
             record.adjust_for_ambient_noise(mic, duration=0.2)
             play(startbeep)
-            print("Listening...")
-            #record speech for 5 seconds
-            audio = record.listen(mic, timeout=1.5, phrase_time_limit=1.5)
-            print("Thinking...")
+           # print("Listening...")
+            audio = record.listen(mic, timeout=1, phrase_time_limit=20)
+        
+            #print("Thinking...")
             play(stopbeep)
             text = record.recognize_google(audio)
             text = text.lower()

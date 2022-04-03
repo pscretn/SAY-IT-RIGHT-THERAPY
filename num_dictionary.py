@@ -3,4 +3,3 @@ nums = json.load(open('json_file/numbers.json'))
 
 def num_dict(number):
     return nums.get(number)
-print(num_dict("twenty one"))
