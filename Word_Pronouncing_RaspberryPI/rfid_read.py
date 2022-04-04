@@ -8,6 +8,8 @@ import drivers
 from word_pron_rfid import wordpronouncing
 from word_pron_random import wordpronoun
 from identify_color import whichcolor
+from simple_maths import add,sub
+from count_number import num_count
 r=28
 g=27
 b=26
@@ -83,11 +85,11 @@ while True :
                         print("mango")
                         wordpronouncing("mango")
                 elif val[0] == 569479343776:
-                        print("orange")
-                        wordpronouncing("orange")
+                        print("count number")
+                        num_count()
                 elif val[0] == 500762422793:
-                        print("yellow")
-                        wordpronouncing("yellow")
+                        print("add")
+                        add()
                 elif val[0] == 925553136382:
                         print("Colors")
                         whichcolor()
