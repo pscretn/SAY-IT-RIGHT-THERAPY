@@ -71,9 +71,7 @@ def KeyPress(key):
     elif key == KeyCode(char='b'):
         val+= 'b'  
     elif key == KeyCode(char='n'):
-        val+= 'n'  
-    elif key == KeyCode(char='m'):
-        val+= 'm'  
+        val+= 'n'    
     elif key == Key.space:
         val+= ' '
     elif key == Key.enter:
