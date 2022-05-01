@@ -61,6 +61,110 @@ def KeyPress(key):
         val+= '0'
         display.lcd_clear()
         lcdprint(val)
+    elif key == KeyCode(char='q'):
+        val+= 'q'
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='w'):
+        val+= 'w'
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='e'):
+        val+= 'e'
+        display.lcd_clear()
+        lcdprint(val)  
+    elif key == KeyCode(char='r'):
+        val+= 'r'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='t'):
+        val+= 't' 
+        display.lcd_clear()
+        lcdprint(val) 
+    elif key == KeyCode(char='y'):
+        val+= 'y'
+        display.lcd_clear()
+        lcdprint(val)  
+    elif key == KeyCode(char='u'):
+        val+= 'u'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='i'):
+        val+= 'i'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='o'):
+        val+= 'o'   
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='p'):
+        val+= 'p'
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='a'):
+        val+= 'a'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='s'):
+        val+= 's'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='d'):
+        val+= 'd'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='f'):
+        val+= 'f'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='g'):
+        val+= 'g'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='h'):
+        val+= 'h'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='j'):
+        val+= 'j'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='k'):
+        val+= 'k' 
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='l'):
+        val+= 'l'
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='z'):
+        val+= 'z'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='x'):
+        val+= 'x'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='c'):
+        val+= 'c'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='v'):
+        val+= 'v'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='b'):
+        val+= 'b'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='n'):
+        val+= 'n'  
+        display.lcd_clear()
+        lcdprint(val)
+    elif key == KeyCode(char='m'):
+        val+= 'm'  
+        display.lcd_clear()
+        lcdprint(val)
     elif key == Key.space:
         val+= ' '
         display.lcd_clear()
