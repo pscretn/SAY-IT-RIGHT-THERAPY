@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
 GPIO.setwarnings(False)
 reader = SimpleMFRC522()
+from time import sleep
 
 def rfidread():
         try:
@@ -11,5 +12,6 @@ def rfidread():
             print(val[0])
         except:
             pass
-
-rfidread()
+while(1):
+        rfidread()
+        sleep(1)

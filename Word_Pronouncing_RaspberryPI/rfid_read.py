@@ -79,23 +79,36 @@ while True :
         try:
                 val = reader.read()
                 if val[0] == 223688273618:
-                        print("boy")
-                        wordpronouncing("boy")
-                elif val[0] == 293752221425:
-                        print("mango")
-                        wordpronouncing("mango")
-                elif val[0] == 569479343776:
+                        print("hat")
+                        wordpronouncing("hat")
+                elif val[0] == 844850409053:
+                        print("aeroplane")
+                        wordpronouncing("aeroplane")
+                elif val[0] == 399423441364:
+                        print("egg")
+                        wordpronouncing("egg")
+                elif val[0] == 788836979286:
+                        print("fan")
+                        wordpronouncing("fan")
+                elif val[0] == 618787920249:
+                        print("ball")
+                        wordpronouncing("ball")
+                elif val[0] == 168230392398:
                         print("count number")
                         num_count()
-                elif val[0] == 500762422793:
+                elif val[0] == 293752221425:
                         print("add")
                         add()
+                elif val[0] == 912154169348:
+                        print("substract")
+                        sub()
                 elif val[0] == 925553136382:
                         print("Colors")
                         whichcolor()
-                else:
-                        print("Random")
+                elif val[0] == 500762422793:
+                        print("random words")
                         wordpronoun()
+  
         except:
                 pass
 
