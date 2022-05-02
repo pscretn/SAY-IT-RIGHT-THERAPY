@@ -8,7 +8,7 @@ import drivers
 from word_pron_rfid import wordpronouncing
 from word_pron_random import wordpronoun
 from identify_color import whichcolor
-from simple_maths import add,sub
+from simple_maths import add,sub,div,mul
 from count_number import num_count
 r=28
 g=27
@@ -82,8 +82,8 @@ while True :
                         print("hat")
                         wordpronouncing("hat")
                 elif val[0] == 844850409053:
-                        print("aeroplane")
-                        wordpronouncing("aeroplane")
+                        print("gun")
+                        wordpronouncing("gun")
                 elif val[0] == 399423441364:
                         print("egg")
                         wordpronouncing("egg")
@@ -91,8 +91,8 @@ while True :
                         print("fan")
                         wordpronouncing("fan")
                 elif val[0] == 618787920249:
-                        print("ball")
-                        wordpronouncing("ball")
+                        print("multiply")
+                        mul()
                 elif val[0] == 168230392398:
                         print("count number")
                         num_count()

@@ -32,7 +32,7 @@ wiringpi.digitalWrite(r,0)
 wiringpi.digitalWrite(g,0)
 wiringpi.digitalWrite(b,0)
 record = sr.Recognizer()
-colors = "red","green","blue","yellow","magenta","cyan"
+colors = "red","green","blue","yellow","pink","cyan"
 startbeep =  AudioSegment.from_wav("/home/pi/SAY-IT-RIGHT-THERAPY/Word_Pronouncing_RaspberryPI/sounds/startbeep.wav")
 stopbeep =  AudioSegment.from_wav("/home/pi/SAY-IT-RIGHT-THERAPY/Word_Pronouncing_RaspberryPI/sounds/endbeep.wav")
 display = drivers.Lcd()
@@ -152,12 +152,12 @@ def whichcolor():
         wiringpi.digitalWrite(r,0)
         wiringpi.digitalWrite(g,0)
         wiringpi.digitalWrite(b,0)
-    elif color == "magenta":
-        #magenta
+    elif color == "pink":
+        #pink
         wiringpi.digitalWrite(r,1)
         wiringpi.digitalWrite(g,0)
         wiringpi.digitalWrite(b,1)
-        nameofcolor("magenta")
+        nameofcolor("pink")
         wiringpi.digitalWrite(r,0)
         wiringpi.digitalWrite(g,0)
         wiringpi.digitalWrite(b,0)
@@ -170,3 +170,4 @@ def whichcolor():
         wiringpi.digitalWrite(r,0)
         wiringpi.digitalWrite(g,0)
         wiringpi.digitalWrite(b,0)
+
