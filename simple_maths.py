@@ -24,4 +24,3 @@ def sub():
         print("Correct answer  %d - %d is %d" % (a,b,c))
     else:
         print("Wrong answer   %d - %d is %d" % (a,b,c))
-    
