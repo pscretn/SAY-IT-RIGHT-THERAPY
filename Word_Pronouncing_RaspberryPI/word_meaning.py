@@ -7,6 +7,8 @@ from speak_text import SpeakText
 import wiringpi
 import RPi.GPIO as GPIO
 import drivers
+
+
 GPIO.setwarnings(False)
 l1 = 22 #indicator led
 words = json.load(open('/home/pi/SAY-IT-RIGHT-THERAPY/json_file/dictionary.json'))
@@ -53,5 +55,4 @@ def wordmeaning():
         display.lcd_clear()
     display.lcd_backlight(0)
     wiringpi.digitalWrite(l1,0)
-
 

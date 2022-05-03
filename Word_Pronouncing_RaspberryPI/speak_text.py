@@ -6,7 +6,7 @@ def SpeakText(voice):
     voices = engine.getProperty('voices')
     engine.setProperty('voice',"english-us")
     rate = engine.getProperty('rate')
-    engine.setProperty('rate', 150)
+    engine.setProperty('rate', 130)
     engine.say(voice)
     engine.runAndWait()
     engine.stop()

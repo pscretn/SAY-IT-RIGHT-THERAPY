@@ -3,8 +3,8 @@ import pyttsx3 as pyt
 from pynput.keyboard import Key, Listener,KeyCode
 
 def KeyPress(key):
-	if key == KeyCode(char='q'):
-		return False
+        if key == Key.space:
+                return False
 
 def KeyOut():
     with Listener(on_press = KeyPress) as listener:   
@@ -30,4 +30,4 @@ def say(phrase):
 		q.terminate()
 
 
-say("this process is running right now, press q to stop say the word")
+say("this process is running right now, press space bar  to stop say the word")
