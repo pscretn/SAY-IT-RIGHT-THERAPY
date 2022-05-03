@@ -1,6 +1,6 @@
 import multiprocessing
 import pyttsx3 as pyt
-from pynput.keyboard import Key, Listener,KeyCode
+from pynput.keyboard import Listener,KeyCode
 
 def KeyPress(key):
         if key == Key.space:
