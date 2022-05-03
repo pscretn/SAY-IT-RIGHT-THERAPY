@@ -10,6 +10,7 @@ from word_pron_random import wordpronoun
 from identify_color import whichcolor
 from simple_maths import add,sub,div,mul
 from count_number import num_count
+from word_meaning import wordmeaning
 r=28
 g=27
 b=26
@@ -88,8 +89,8 @@ while True :
                         print("egg")
                         wordpronouncing("egg")
                 elif val[0] == 788836979286:
-                        print("fan")
-                        wordpronouncing("fan")
+                        print("division")
+                        div()
                 elif val[0] == 618787920249:
                         print("multiply")
                         mul()
@@ -108,6 +109,9 @@ while True :
                 elif val[0] == 500762422793:
                         print("random words")
                         wordpronoun()
+                elif val[0] == 569479343776:
+                        print("dictionary")
+                        wordmeaning()
   
         except:
                 pass
