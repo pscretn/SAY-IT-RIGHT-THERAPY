@@ -1,5 +1,5 @@
 import random
-from keyboard_input import KeyOut,clr
+from keyboard_input_num import KeyOut,clr
 import drivers
 from time import sleep
 from speak_text import SpeakText
