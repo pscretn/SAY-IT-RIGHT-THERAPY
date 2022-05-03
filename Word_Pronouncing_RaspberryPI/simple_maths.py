@@ -67,7 +67,7 @@ def sub():
     wiringpi.digitalWrite(l1,1)
     a = random.randint(0,51)
     b = random.randint(0,a)
-    SpeakText("What is %d - %d ?" % (a,b))
+    SpeakText("What is %d minus %d ?" % (a,b))
     display.lcd_backlight(1)
     lcdprint(str(a)+" - "+str(b))
     c = a - b
@@ -77,14 +77,14 @@ def sub():
         wiringpi.digitalWrite(green,1)
         display.lcd_backlight(1)
         lcdprint(str(a)+" - "+str(b)+" = "+str(c))
-        SpeakText("Correct answer,  %d - %d is %d" % (a,b,c))
+        SpeakText("Correct answer,  %d minus %d is %d" % (a,b,c))
         display.lcd_clear()
         wiringpi.digitalWrite(green,0)
     else:
         wiringpi.digitalWrite(red,1)
         display.lcd_backlight(1)
         lcdprint(str(a)+" - "+str(b)+" = "+str(c))
-        SpeakText("Wrong answer,   %d - %d is %d" % (a,b,c))
+        SpeakText("Wrong answer,   %d minus %d is %d" % (a,b,c))
         display.lcd_clear()
         wiringpi.digitalWrite(red,0)
     wiringpi.digitalWrite(l1,0)
@@ -94,7 +94,7 @@ def mul():
     wiringpi.digitalWrite(l1,1)
     a = random.randint(0,51)
     b = random.randint(0,51)
-    SpeakText("What is %d * %d ?" % (a,b))
+    SpeakText("What is %d multiplied %d ?" % (a,b))
     display.lcd_backlight(1)
     lcdprint(str(a)+" * "+str(b))
     c = a * b
@@ -104,14 +104,14 @@ def mul():
         wiringpi.digitalWrite(green,1)
         display.lcd_backlight(1)
         lcdprint(str(a)+" * "+str(b)+" = "+str(c))
-        SpeakText("Correct answer,  %d * %d is %d" % (a,b,c))
+        SpeakText("Correct answer,  %d multiplied %d is %d" % (a,b,c))
         display.lcd_clear()
         wiringpi.digitalWrite(green,0)
     else:
         wiringpi.digitalWrite(red,1)
         display.lcd_backlight(1)
         lcdprint(str(a)+" * "+str(b)+" = "+str(c))
-        SpeakText("Wrong answer,   %d * %d is %d" % (a,b,c))
+        SpeakText("Wrong answer,   %d multiplied %d is %d" % (a,b,c))
         display.lcd_clear()
         wiringpi.digitalWrite(red,0)
     wiringpi.digitalWrite(l1,0)
@@ -160,7 +160,7 @@ def div():
     else:
         b=1
     
-    SpeakText("What is %d / %d ?" % (a,b))
+    SpeakText("What is %d divided %d ?" % (a,b))
     display.lcd_backlight(1)
     lcdprint(str(a)+" / "+str(b))
     c = a / b
@@ -170,14 +170,14 @@ def div():
         wiringpi.digitalWrite(green,1)
         display.lcd_backlight(1)
         lcdprint(str(a)+" / "+str(b)+" = "+str(c))
-        SpeakText("Correct answer,  %d / %d is %d" % (a,b,c))
+        SpeakText("Correct answer,  %d divided %d is %d" % (a,b,c))
         display.lcd_clear()
         wiringpi.digitalWrite(green,0)
     else:
         wiringpi.digitalWrite(red,1)
         display.lcd_backlight(1)
         lcdprint(str(a)+" / "+str(b)+" = "+str(c))
-        SpeakText("Wrong answer,   %d / %d is %d" % (a,b,c))
+        SpeakText("Wrong answer,   %d divided %d is %d" % (a,b,c))
         display.lcd_clear()
         wiringpi.digitalWrite(red,0)
     wiringpi.digitalWrite(l1,0)

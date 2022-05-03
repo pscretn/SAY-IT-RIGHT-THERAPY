@@ -11,6 +11,7 @@ from identify_color import whichcolor
 from simple_maths import add,sub,div,mul
 from count_number import num_count
 from word_meaning import wordmeaning
+from word_spelling import spelling
 r=28
 g=27
 b=26
@@ -80,38 +81,41 @@ while True :
         try:
                 val = reader.read()
                 if val[0] == 223688273618:
-                        print("hat")
+                        #print("hat")
                         wordpronouncing("hat")
                 elif val[0] == 844850409053:
-                        print("gun")
+                        #print("gun")
                         wordpronouncing("gun")
                 elif val[0] == 399423441364:
-                        print("egg")
+                        #print("egg")
                         wordpronouncing("egg")
                 elif val[0] == 788836979286:
-                        print("division")
+                        #print("division")
                         div()
                 elif val[0] == 618787920249:
-                        print("multiply")
+                        #print("multiply")
                         mul()
                 elif val[0] == 168230392398:
-                        print("count number")
+                        #print("count number")
                         num_count()
                 elif val[0] == 293752221425:
-                        print("add")
+                        #print("add")
                         add()
                 elif val[0] == 912154169348:
-                        print("substract")
+                        #print("substract")
                         sub()
                 elif val[0] == 925553136382:
-                        print("Colors")
+                        #print("Colors")
                         whichcolor()
                 elif val[0] == 500762422793:
-                        print("random words")
+                        #print("random words")
                         wordpronoun()
                 elif val[0] == 569479343776:
-                        print("dictionary")
+                        #print("dictionary")
                         wordmeaning()
+                elif val[0] == 570688024030:
+                        #print("spelling")
+                        spelling()
   
         except:
                 pass
