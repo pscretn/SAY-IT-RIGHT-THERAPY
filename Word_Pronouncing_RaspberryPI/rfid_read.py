@@ -88,8 +88,8 @@ while True :
                         print("egg")
                         wordpronouncing("egg")
                 elif val[0] == 788836979286:
-                        print("fan")
-                        wordpronouncing("fan")
+                        print("division")
+                        div()
                 elif val[0] == 618787920249:
                         print("multiply")
                         mul()
