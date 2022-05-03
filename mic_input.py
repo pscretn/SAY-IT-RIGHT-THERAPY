@@ -13,7 +13,7 @@ def  micinput():
             record.adjust_for_ambient_noise(mic, duration=0.2)
             play(startbeep)
            # print("Listening...")
-            audio = record.listen(mic, timeout=1, phrase_time_limit=20)
+            audio = record.listen(mic, timeout=1, phrase_time_limit=6)
         
             #print("Thinking...")
             play(stopbeep)
