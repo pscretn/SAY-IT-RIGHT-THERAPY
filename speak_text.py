@@ -9,3 +9,4 @@ def SpeakText(voice):
     engine.say(voice)
     engine.runAndWait()
     engine.stop()
+SpeakText("hello")
